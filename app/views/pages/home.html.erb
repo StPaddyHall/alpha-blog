@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+<style>
+    body {
+        background-image: url("http://helenebrunet.com/wp-content/uploads/2014/04/new-york-cityscape-x-wallpaper-rightclicka_New-York-Cityscape-1920X1440-Wallpaper.jpg");
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    .centered {
+      background-color: #FFF;
+      min-height: 300px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .card {
+      box-shadow: 0 19px 38px rgba(240,240,240,0.30), 0 15px 12px rgba(240,240,240,0.22);
+    }
+    
+</style>
+
+<div class="centered card">
+    <h1>Alpha Blog</h1>
+    <%= link_to 'About', about_path %>
+    <p>Welcome to the Alpha Blog. A place to truly express yourself unencumbered by the benalties of life.</p>
+</div>
