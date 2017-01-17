@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
     
     def index
         # plural as we are grabbing all
-        @articles = Article.all
+        @articles = Article.paginate(page: params[:page], per_page: 5)
     end
     
     def new
